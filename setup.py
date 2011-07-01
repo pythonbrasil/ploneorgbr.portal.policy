@@ -28,6 +28,7 @@ setup(name='ploneorgbr.portal.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'ploneorgbr.portal.theme',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
@@ -37,4 +38,3 @@ setup(name='ploneorgbr.portal.policy',
       target = plone
       """,
       )
-
