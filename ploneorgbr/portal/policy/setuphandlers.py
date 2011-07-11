@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
-from zope import component
+
 import logging
+
+from zope import component
+
+from Products.ZCatalog.ProgressHandler import ZLogHandler
 from Products.CMFCore.utils import getToolByName
+
 from Products.GenericSetup import interfaces as gsinterfaces
 from Products.GenericSetup.upgrade import listUpgradeSteps
 
-from Products.ZCatalog.ProgressHandler import ZLogHandler
+from Products.Carousel.utils import unregisterViewlet
 
 try:
     from Products.CacheSetup import interfaces
@@ -30,12 +35,12 @@ def doUpgrades(context):
     version = setup_tool.getLastVersionForProfile(_PROFILE_ID)
     upgradeSteps = listUpgradeSteps(setup_tool,_PROFILE_ID, version)
     sorted(upgradeSteps,key=lambda step:step['sortkey'])
-    
+
     if cache:
         # Desabilitamos o cache fu para nao termos uma enxurrada
         # de purges
         cache.setEnabled(False)
-        
+
     for step in upgradeSteps:
         oStep = step.get('step')
         if oStep is not None:
@@ -44,9 +49,11 @@ def doUpgrades(context):
                                                           _PROFILE_ID)
             setup_tool.setLastVersionForProfile(_PROFILE_ID, oStep.dest)
             logger.info(msg)
-    
+
     if cache:
         # Novamente habilitamos o cache fu para nao termos uma enxurrada
         # de purges
         cache.setEnabled(True)
-    
+
+    # make sure the default Carousel viewlet is unregistered
+    unregisterViewlet()
