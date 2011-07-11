@@ -22,7 +22,14 @@ def upgrade0to1(context):
     # List package names
     packages = [
                 'ploneorgbr.portal.theme',
-               ]
+                'Products.Doormat',
+                'Products.Carousel',
+                'Products.PloneHelpCenter',
+                #'Products.PloneSoftwareCenter',
+                #'Products.Poi',
+                'sc.social.like',
+
+    ]
     # (name,locked,hidden,install,profile,runProfile)
     dependencies = [(name,locked,hidden,profile) for name,locked,hidden,install,profile,runProfile in PRODUCTS if ((name in packages) and install)]
 
