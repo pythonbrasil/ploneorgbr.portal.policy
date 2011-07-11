@@ -5,5 +5,14 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="ploneorgbr.portal.policy">
-    
+
+  <adapter
+      name="ploneorg.carousel"
+      for="Products.CMFCore.interfaces.ISiteRoot
+           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           *"
+      factory="Products.Carousel.browser.viewlet.CarouselViewlet"
+      provides="zope.contentprovider.interfaces.IContentProvider"
+      />
+
 </configure>
