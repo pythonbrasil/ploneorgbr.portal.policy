@@ -15,16 +15,16 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="PloneOrgBr: Politicas do site"
+      title="Plone.org.br: Políticas do site"
       directory="profiles/default"
-      description="Transforma um site Plone comum em um site PloneOrgBr"
+      description="Transforma um site Plone comum em um site Plone.org.br"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       i18n:attributes="title; description"
       />
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="Desinstala Politicas de PloneOrgBr"
+      title="Desinstala Políticas do site Plone.org.br"
       directory="profiles/uninstall"
       description="Desinstala o pacote ploneorgbr.portal.policy"
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -34,9 +34,9 @@
   <!-- Oculta produtos no quickinstaller -->
 
   <utility factory=".quickinstaller.HiddenProfiles"
-           name="ploneorgbr.portal.policy" />
+      name="ploneorgbr.portal.policy" />
 
   <utility factory=".quickinstaller.HiddenProducts"
-           name="ploneorgbr.portal.policy" />
+      name="ploneorgbr.portal.policy" />
 
 </configure>
