@@ -8,11 +8,11 @@
     <!-- Upgrades-->
     <genericsetup:upgradeStep
         title="Upgrade for ploneorgbr.portal.policy"
-        description=""
-        source="0.0"
-        destination="1.0"
+        description="Initial upgrade step for Plone.org.br"
+        source="0"
+        destination="1000"
         sortkey="1"
-        handler="ploneorgbr.portal.policy.upgrades.to01.upgrade0to1"
+        handler="ploneorgbr.portal.policy.upgrades.to1000.upgrade0to1000"
         profile="ploneorgbr.portal.policy:default" />
         
 </configure>

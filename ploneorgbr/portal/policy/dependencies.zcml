@@ -6,6 +6,7 @@
     i18n_domain="ploneorgbr.portal.policy">
 
   <include package="collective.recaptcha" />
+  <include package="collective.simplesocial" />
   <include package="collective.contentrules.mailtogroup" />
   <include package="collective.contentrules.mailtolocalrole" />
   <include package="ploneorgbr.portal.theme" />

@@ -9,8 +9,8 @@ from Products.ZCatalog.ProgressHandler import ZLogHandler
 
 from ploneorgbr.portal.policy.config import PRODUCTS
 
-def upgrade0to1(context):
-    """ Upgrade to version 1.0
+def upgrade0to1000(context):
+    """ Upgrade from version 0 to version 1000
     """
     setup = getToolByName(context, 'portal_setup')
     migration = getToolByName(context,'portal_migration')
@@ -21,15 +21,23 @@ def upgrade0to1(context):
     # Install dependencies for this upgrade
     # List package names
     packages = [
-                'ploneorgbr.portal.theme',
-                'Products.Doormat',
-                'Products.Carousel',
-                'Products.PloneHelpCenter',
-                #'Products.PloneSoftwareCenter',
-                #'Products.Poi',
-                'sc.social.like',
-
+        'Products.Carousel',
+        'Products.Doormat',
+        'Products.PloneHelpCenter',
+        'ploneorg.kudobounty',
+        'Products.PloneFormGen',
+        #'Products.PloneSoftwareCenter',
+        #'Products.Poi',
+        'collective.contentrules.mailtogroup',
+        'collective.contentrules.mailtolocalrole',
+        'collective.recaptcha',
+        'collective.simplesocial',
+        'collective.watcherlist',
+        'ploneorgbr.portal.theme',
+        'sc.social.like',
     ]
+
+
     # (name,locked,hidden,install,profile,runProfile)
     dependencies = [(name,locked,hidden,profile) for name,locked,hidden,install,profile,runProfile in PRODUCTS if ((name in packages) and install)]
 
