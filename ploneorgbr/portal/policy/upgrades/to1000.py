@@ -32,6 +32,7 @@ def upgrade0to1000(context):
         'collective.contentrules.mailtolocalrole',
         'collective.recaptcha',
         'collective.simplesocial',
+        'collective.twitter.action',
         'collective.watcherlist',
         'ploneorgbr.portal.theme',
         'sc.social.like',

@@ -14,6 +14,7 @@ PRODUCTS = [
     ('collective.js.jqueryui',0,0,0,'collective.js.jqueryui:default',0),
     ('collective.recaptcha',0,0,1,'collective.recaptcha:default',1),
     ('collective.simplesocial',0,0,1,'collective.simplesocial:default',1),
+    ('collective.twitter.action',0,0,1,'collective.twitter.action:default',1),
     ('collective.watcherlist',0,0,1,'collective.watcherlist:default',1),
     ('ploneorgbr.portal.policy',0,1,0,'ploneorgbr.portal.policy:uninstall',0),
     ('ploneorgbr.portal.theme',0,0,1,'ploneorgbr.portal.theme:default',1),

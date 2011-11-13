@@ -9,6 +9,7 @@
   <include package="collective.simplesocial" />
   <include package="collective.contentrules.mailtogroup" />
   <include package="collective.contentrules.mailtolocalrole" />
+  <include package="collective.twitter.action" />
   <include package="ploneorgbr.portal.theme" />
   <include package="sc.social.like" />
 
