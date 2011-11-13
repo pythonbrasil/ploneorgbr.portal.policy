@@ -37,7 +37,6 @@ def upgrade0to1000(context):
         'sc.social.like',
     ]
 
-
     # (name,locked,hidden,install,profile,runProfile)
     dependencies = [(name,locked,hidden,profile) for name,locked,hidden,install,profile,runProfile in PRODUCTS if ((name in packages) and install)]
 
