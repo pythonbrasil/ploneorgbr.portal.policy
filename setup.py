@@ -28,6 +28,7 @@ setup(name='ploneorgbr.portal.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          # -*- Extra requirements: -*-
           'collective.contentrules.mailtogroup==1.2',
           'collective.contentrules.mailtolocalrole==1.1',
           'collective.recaptcha==1.1.3',
@@ -45,7 +46,6 @@ setup(name='ploneorgbr.portal.policy',
           'Products.PloneHelpCenter==4.0b3',
           #'Products.PloneSoftwareCenter==1.6.2',
           'Products.Poi==2.0.2',
-          # -*- Extra requirements: -*-
       ],
       entry_points="""
       # -*- Entry points: -*-
