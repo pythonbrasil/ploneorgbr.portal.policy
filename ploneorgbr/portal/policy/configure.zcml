@@ -11,7 +11,9 @@
 
   <include package=".browser" />
   <include package=".upgrades" />
-  <include file="dependencies.zcml" />
+
+  <!-- Include configuration for dependencies listed in setup.py -->
+  <includeDependencies package="." />
 
   <genericsetup:registerProfile
       name="default"
