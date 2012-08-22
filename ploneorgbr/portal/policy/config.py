@@ -10,8 +10,11 @@ __docformat__ = 'plaintext'
 
 PRODUCTS = [
     ('collective.contentrules.mailtogroup', 0, 0, 1, 'collective.contentrules.mailtogroup:default', 1),
-    ('collective.contentrules.mailtolocalrole', 0, 0, 1, ':collective.contentrules.mailtolocalroledefault', 1),
+    ('collective.contentrules.mailtolocalrole', 0, 0, 1, 'collective.contentrules.mailtolocalrole:default', 1),
+    #('collective.cover', 0, 0, 0, 'collective.cover:default', 0),
+    ('collective.geo.usersmap', 0, 0, 1, 'collective.geo.usersmap:default', 1),
     ('collective.js.jqueryui', 0, 0, 0, 'collective.js.jqueryui:default', 0),
+    ('collective.ploneslimbar', 0, 0, 1, 'collective.ploneslimbar:default', 1),
     ('collective.recaptcha', 0, 0, 1, 'collective.recaptcha:default', 1),
     ('collective.simplesocial',  0,  1,  1,  'collective.simplesocial:fbconnect',  1),
     ('collective.simplesocial',  0,  1,  0,  'collective.simplesocial:fbconnect_10_14',  0),
@@ -21,8 +24,6 @@ PRODUCTS = [
     ('ploneorgbr.portal.policy', 0, 1, 0, 'ploneorgbr.portal.policy:uninstall', 0),
     ('ploneorgbr.portal.theme', 0, 0, 1, 'ploneorgbr.portal.theme:default', 1),
     ('ploneorgbr.portal.theme', 0, 0, 0, 'ploneorgbr.portal.theme:uninstall', 0),
-    ('ploneorg.kudobounty', 0, 0, 1, 'ploneorg.kudobounty:default', 1),
-    ('ploneorg.kudobounty', 0, 0, 0, 'ploneorg.kudobounty:portlets', 0),
     ('sc.social.like', 0, 0, 1, 'sc.social.like:default', 1),
     ('sc.social.like', 0, 0, 0, 'sc.social.like:uninstall', 0),
     ('Products.Doormat', 0, 0, 1, 'Products.Doormat:default', 1),
