@@ -28,21 +28,23 @@ setup(name='ploneorgbr.portal.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
-          'collective.contentrules.mailtogroup==1.2',
-          'collective.contentrules.mailtolocalrole==1.1',
+          #'collective.cover',  # TODO: remove?
+          'collective.contentrules.mailtogroup==1.2',  # TODO: remove?
+          'collective.contentrules.mailtolocalrole==1.1',  # TODO: remove?
+          'collective.geo.usersmap',
+          'collective.loremipsum==0.5',
+          'collective.ploneslimbar',
           'collective.recaptcha==1.1.3',
           'collective.simplesocial==1.6',
           'collective.twitter.accounts==1.0.1',
           'collective.twitter.action==1.0.1',
-          'collective.watcherlist==0.3',
-          #'jarn.xmpp.collaboration',
-          'sc.social.like==0.9',
+          'collective.watcherlist==0.3',  # TODO: remove?
+          'sc.social.like==0.9.1',
+          'plone.namedfile',
           'ploneorgbr.portal.theme==0.5',
-          'ploneorg.kudobounty==0.1',
           'Products.Carousel==2.1',
-          'Products.Doormat==0.7',
-          'Products.PloneFormGen==1.7rc1',
+          'Products.Doormat==0.7',  # TODO: remove?
+          'Products.PloneFormGen==1.7.2',
           'Products.PloneHelpCenter==4.0b3',
           #'Products.PloneSoftwareCenter==1.6.2',
           'Products.Poi==2.0.2',
